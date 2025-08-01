@@ -249,7 +249,7 @@ def max_drawdown(cumulative_returns):
     return draw_down.min()
 
 #printing the performance metrics of the three strategies
-print("\n📊 Performance Metrics:")
+print("\n Performance Metrics:")
 print(f"Dynamic Risk Parity Sharpe (With Cost): {sharpe_ratio(rp_dynamic_cost_df['Return']):.3f}")
 print(f"Risk Parity Sharpe: {sharpe_ratio(risk_parity_returns):.3f}")
 print(f"60/40 Sharpe: {sharpe_ratio(trad_wt_par_returns):.3f}")
@@ -289,9 +289,9 @@ features_df = pd.DataFrame({
 })
 
 #inspecting feature integrity before model training
-print("📋 Feature Snapshot:\n", features_df.head())
-print("\n🔍 Feature Types:\n", features_df.dtypes)
-print("\n🧼 Missing Values:\n", features_df.isnull().sum())
+print(" Feature Snapshot:\n", features_df.head())
+print("\n Feature Types:\n", features_df.dtypes)
+print("\n Missing Values:\n", features_df.isnull().sum())
 
 #drop rows where target label or rolling Sharpe is missing, then forward-fill remaining NaNs
 features_clean = features_df.dropna(subset=['Rolling_Sharpe', 'Label'])

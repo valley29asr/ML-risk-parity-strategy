@@ -1,5 +1,5 @@
-Author : Anshruta Singh Rahar
-Undergraduate, Penn State University
+Author : Anshruta Singh Rahar,
+Undergraduate, Penn State University,
 B.S in Computer Science and Computational Maths, Minor in Statistics
 
 ## ML-risk-parity-strategy
